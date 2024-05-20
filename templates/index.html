@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0ffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+        li:hover {
+            background-color: #f9f9f9;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+        <h1>Welcome to My Simple Blog</h1>
+        <ul>
+            {% for post in blog_content %}
+                <li>
+                    <h2>{{ post.title }}</h2>
+                    <p><strong>Tags:</strong> {{ post.tags }}</p>
+                    <p>{{ post.description }}</p>
+                    <a href="{{ url_for('view_content', post_index=loop.index) }}">Read More</a>
+                    <a href="{{ url_for('edit_content', post_index=loop.index) }}">Edit</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/add">Add New Content</a>
+    </div>
 </body>
 </html>

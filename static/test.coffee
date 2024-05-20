@@ -1,1 +1,2 @@
-# hello world in coffeescript
+greeting = "Hello, World!"
+console.log greeting

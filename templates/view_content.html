@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0ffff; /* Light cyan background */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ post.title }}</h1>
+        <p><strong>Tags:</strong> {{ post.tags }}</p>
+        <p>{{ post.content }}</p>
+        <a href="/">Back to Main Page</a>
+    </div>
+</body>
+</html>
