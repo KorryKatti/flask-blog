@@ -4,6 +4,8 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
+
+
 # Path to JSON file to store blog content
 JSON_FILE = "blog_content.json"
 CREDENTIALS_FILE = "credentials.json"

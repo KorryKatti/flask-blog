@@ -39,7 +39,8 @@
     <div class="container">
         <h1>{{ post.title }}</h1>
         <p><strong>Tags:</strong> {{ post.tags }}</p>
-        <p>{{ post.content }}</p>
+        <!-- Use safe filter to render HTML content -->
+        <div>{{ post.content | safe }}</div>
         <a href="/">Back to Main Page</a>
     </div>
 </body>
