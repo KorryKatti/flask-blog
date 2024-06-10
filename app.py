@@ -8,7 +8,10 @@ app = Flask(__name__)
 
 # Path to JSON file to store blog content
 JSON_FILE = "blog_content.json"
-CREDENTIALS_FILE = "credentials.json"
+# Get credentials from environment variables
+USERNAME = os.getenv('USERNAME', 'admin')
+PASSWORD = os.getenv('PASSWORD', 'password')
+
 
 # Load existing blog content from JSON file
 try:
