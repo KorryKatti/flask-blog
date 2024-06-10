@@ -3,7 +3,7 @@
         "title": "Testing out the html fr",
         "tags": "test",
         "description": "Just added html , must be good",
-        "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Basic HTML Page</title>\r\n</head>\r\n<body>\r\n    <h1>Welcome to My Basic HTML Page</h1>\r\n    <p>\r\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus nec lorem vestibulum consequat. Vestibulum non nisi vel eros tempus congue at a justo. Duis maximus mauris eget tellus efficitur lobortis. Vivamus commodo feugiat velit ut accumsan. Quisque vel ex id tortor convallis fermentum at vitae turpis. Ut mattis rutrum metus, at rutrum ex iaculis id. Integer pulvinar libero vel ultricies fermentum. Maecenas id nisi vitae metus vehicula euismod. Mauris vitae convallis nisl, at pellentesque est.\r\n    </p>\r\n    <img src=\"https://i.pinimg.com/564x/45/5c/ea/455cea3ddb392b20054b1058ff9478bc.jpg\" alt=\"Placeholder Image\">\r\n    <p>\r\n        Nulla facilisi. Donec eu turpis eu risus consequat dignissim sed at dui. Proin ut mauris ullamcorper, efficitur libero et, gravida lorem. In hac habitasse platea dictumst. Nullam cursus luctus ex, eu efficitur orci efficitur sit amet. Cras luctus nunc ut fermentum accumsan. Curabitur rhoncus efficitur libero sit amet dignissim. Integer posuere lorem at volutpat malesuada. Nam suscipit accumsan massa, a lobortis eros gravida nec.\r\n    </p>\r\n</body>\r\n</html>\r\n"
+        "content": "kys"
     },
     {
         "title": "tags",
