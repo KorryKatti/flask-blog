@@ -1,2 +1,21 @@
-.venv/
+# Database
+*.db
+
+# Virtual Environment
+venv/
 .env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+.DS_Store
